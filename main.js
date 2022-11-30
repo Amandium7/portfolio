@@ -15,3 +15,20 @@ let brightness2 = function (){
     }
 
 image3.addEventListener('mouseout', brightness2)
+
+
+let image4 = document.querySelector('main')
+
+let brightness3 = function (){
+    image4.style.opacity='.5';
+    }
+
+image4.addEventListener('mousedown', brightness3)
+
+let image5 = document.querySelector('main')
+
+let brightness4 = function (){
+    image5.style.opacity='1';
+    }
+
+image5.addEventListener('mouseup', brightness4)

@@ -64,7 +64,6 @@ nav ul a {
     height:31.25em;
     width:100%;
     background-size: cover;
-
 }
 
 h1 {
@@ -90,6 +89,9 @@ h1 {
 
 .overlay * {
     position: relative; /* Makes elements display above overlay. */
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .intro {
@@ -245,6 +247,55 @@ footer {
     max-width: 65%;
     max-height:auto;
 }
+
+
+@media screen and (max-width: 950px) {
+    .portfoliocontainer1 {
+        flex-direction: column;
+    }
+
+    .portfoliocontainer2 {
+        flex-direction: column;
+    }
+
+    .portfoliobodyimage1, .portfoliobodyimage2, .portfoliobodyimage3, .portfoliobodyimage4 {
+        margin-bottom:1em;
+    }
+
+    h1 {
+        font-size:5em;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction:column;
+    }
+    footer h2 {
+        font-size: 1.25em;
+    }
+
+}
+@media screen and (max-width: 850px){
+    .container2 {
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    footer h2 {
+        font-size: 1em;
+    }
+    .footerleft {
+        display:flex;
+        flex-direction:column;
+    }
+    .footermiddle {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+} 
 
 
 
