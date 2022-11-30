@@ -2,8 +2,32 @@
 font-family: 'Montserrat', sans-serif;
 */
 
-nav {
-    font-family: 'Dancing Script', cursive;
-    font-size: 16px;
-    display: inline-block;
+main {
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    background-color:#594946;
+    position:fixed;
+    width: 100%;
+}
+
+nav ul{
+    padding-left:0px;
+}
+
+nav ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    display: inline;
+    align-items:center;
+    justify-content: center;
+    padding:0 75px;
+    font-weight: bold;
+    color:white;
 }
