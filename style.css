@@ -10,6 +10,10 @@ main {
     width: 100%;
     height: auto;
 }
+p {
+    color:#594946;
+    font-size: 1.125em;
+}
 
 header {
 
@@ -20,10 +24,10 @@ nav{
     align-items: center;
     justify-content: center;
     padding:0;
-    background-color:#594946;
+    background-color:#f8e1cf;
     position:fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 999;
 }
 
 nav ul{
@@ -32,39 +36,27 @@ nav ul{
 
 nav ul li{
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 1.125em;
     display: inline;
     align-items:center;
     justify-content: center;
-    padding:0 75px;
-    font-weight: bold;
-    color:white;
+    padding:0 4.6875em;
+    color:#594946;
+    font-weight:600;
 }
 
 .hero {
-    padding-top:150px;
+    padding-top:9.375em;
     background-image: url("media/iStock-172979018.jpg");
-    height:500px;
+    height:31.25em;
     width:100%;
     background-size: cover;
 
 }
 
-/*.hero:before{
-    content:"";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.2);
-}*/
-
 h1 {
     color: white;
-    font-size: 120px;
+    font-size: 7.5em;
     font-family: 'Dancing Script', cursive;
     text-align: center;
     z-index: 3;
@@ -77,12 +69,109 @@ h1 {
     z-index: 1;
     display: block;
     position: absolute;   
-    height: 650px;
+    height: 40.625em;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .overlay * {
     position: relative; /* Makes elements display above overlay. */
+}
+
+.intro {
+    width:50%;
+    display:flex;
+    margin-left:25%;
+    margin-top: 8em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    color:#594946;
+}
+
+.portfolio {
+    margin-top:8em;
+    height:auto;
+    width:100%;
+}
+
+.portfolio h2 {
+    padding-top:.5em;
+}
+
+.portfoliobody {
+    text-align: center;
+    display:block;
+    height: auto;
+    max-width:100%;
+}
+
+.portfolio::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .15;
+    z-index: -1;
+    background-image: url("media/treasuremap.jpg");
+}
+
+.portfoliocontainer1 {
+    max-width:100%;
+    height: 20em;
+    display: flex;
+    justify-content:center;
+    margin-top: 2em;
+}
+
+.portfoliobodyimage1 {
+    background-image: url("media/el-torito.jpeg");
+    width:25%;
+    height: 15em;
+    background-size:cover;
+    margin:0 3em;
+
+}
+
+.portfoliobodyimage1 h3 {
+    margin-top: 13em;
+}
+
+.portfoliobodyimage2 {
+    background-image: url("media/mountainbike.jpg");
+    width:25%;
+    height: 15em;
+    background-size:cover;
+    margin:0 3em;
+    background-position: right;
+}
+
+.portfoliocontainer2 {
+    max-width:100%;
+    height: 20em;
+    display: flex;
+    justify-content:center;
+}
+
+.portfoliobodyimage3 {
+    background-image: url("media/pizza.jpg");
+    width:25%;
+    height: 15em;
+    background-size:cover;
+    margin:0 3em;
+
+}
+
+.portfoliobodyimage4 {
+    background-image: url("media/arts\ and\ crafts.jpeg");
+    width:25%;
+    height: 15em;
+    background-size:cover;
+    margin:0 3em;
+    background-position: right;
 }
