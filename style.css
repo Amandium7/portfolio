@@ -1,0 +1,9 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+nav {
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+    display: inline-block;
+}
